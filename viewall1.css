@@ -179,6 +179,10 @@ body{
     font-size:18px;
     font-weight:bold;
 }
+
+.logo a{
+    text-decoration: none;
+}
 /* ===========================
    LOGIN
 =========================== */
@@ -475,6 +479,59 @@ body{
     .buy-btn{
         margin:15px auto 0;
     }
+
+    
+    .mega-menu{
+    position:absolute;
+    top:60px;
+    width: 400px;
+    display:flex;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    
+}
+
+.dropdown:hover .mega-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.column{
+    flex:3;
+    padding:20px;
+}
+
+
+
+.column h2{
+
+    font-size:30px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.genre-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.genre-list a
+{
+    display:block;
+    text-decoration:none;
+    color:#444;
+    font-size:25px;
+    
+    transition:.3s;
+}
+
+.genre-list a:hover{
+    color:#e34c3d;
+}
 }
 
 /* ===========================
@@ -501,7 +558,7 @@ body{
     }
 
     .section-header h2{
-        font-size:22px;
+        font-size:20px;
     }
 
     .book{
@@ -533,4 +590,56 @@ body{
     .buy-btn{
         width:100%;
     }
+
+    .mega-menu{
+    position:absolute;
+    top:60px;
+    width:190px;
+    display:flex;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    
+}
+
+.dropdown:hover .mega-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.column{
+    flex:3;
+    padding:10px;
+}
+
+
+
+.column h2{
+
+    font-size: 25px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.genre-list{
+    
+grid-template-columns:1fr;
+    
+}
+
+.genre-list a
+{
+    display:block;
+    text-decoration:none;
+    color:#444;
+    font-size:12px;
+        margin:5px 0;
+    transition:.3s;
+}
+
+.genre-list a:hover{
+    color:#e34c3d;
+}
 }
